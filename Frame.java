@@ -9,7 +9,7 @@ public class Frame implements ActionListener{
     JLabel label;
     JTextField field;
     JButton button;
-    //Frame act;
+    
     public Frame(){
         frame = new JFrame();
         frame.setSize(500,500);
@@ -52,19 +52,22 @@ public class Frame implements ActionListener{
     }
 
     public void action(){
-        Frame act = new Frame();
-        
+        System.out.println("Pressed");
+        String input = field.getText();
+        if(input.length()== 0){
+            System.out.println("empty");
+            JOptionPane.showMessageDialog( button, "Please input some text", "Warning", JOptionPane.WARNING_MESSAGE); 
+        }else{
+            System.out.println("something");
+            JOptionPane.showMessageDialog( button, "you have entered "+input, "Success", JOptionPane.INFORMATION_MESSAGE); 
+        }     
     }
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
         if(e.getSource() == button){
-           //act.action();
-           System.out.println("Pressed");
-           String input = field.getText();
-           JOptionPane.showMessageDialog( button, "you have entered "+input, "Success", JOptionPane.INFORMATION_MESSAGE);
+           action();
         }
         
     }
