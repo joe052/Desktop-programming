@@ -59,7 +59,9 @@ public class Frame implements ActionListener{
             JOptionPane.showMessageDialog( button, "Please input some text", "Warning", JOptionPane.WARNING_MESSAGE); 
         }else{
             System.out.println("something");
-            JOptionPane.showMessageDialog( button, "you have entered "+input, "Success", JOptionPane.INFORMATION_MESSAGE); 
+            JOptionPane.showMessageDialog( button, "you have entered "+input, "Success", JOptionPane.INFORMATION_MESSAGE);
+            frame.dispose(); 
+            new Frame();
         }     
     }
 
