@@ -1,6 +1,7 @@
 import java.util.*;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.Color;
 import java.awt.event.*;
 
 public class Frame implements ActionListener{
