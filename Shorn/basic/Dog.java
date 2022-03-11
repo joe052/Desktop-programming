@@ -1,3 +1,5 @@
+package Shorn.basic;
+
 public class Dog extends Animal{
     public Dog(){
         int fur;

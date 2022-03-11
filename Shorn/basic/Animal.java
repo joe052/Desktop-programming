@@ -1,3 +1,5 @@
+package Shorn.basic;
+
 public class Animal{
   static final int eyes = 2;
   //int legs;

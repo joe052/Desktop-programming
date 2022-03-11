@@ -1,3 +1,5 @@
+package Shorn.basic;
+
 public class Bird extends Animal {
     public Bird(){
         final int wings =2;
