@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//cloned
 public class Student {
     int x;
     static String name;
