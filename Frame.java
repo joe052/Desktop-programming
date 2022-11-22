@@ -14,7 +14,7 @@ public class Frame implements ActionListener{
     public Frame(){
         frame = new JFrame();
         frame.setSize(500,500);
-        frame.setTitle("Nathan Learns to code");
+        frame.setTitle("Text checker");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         label = new JLabel("Enter Number");
